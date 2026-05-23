@@ -1,39 +1,86 @@
 export default function Home() {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-black text-white scroll-smooth">
 
-      {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center px-6">
+      {/* BACKGROUND */}
+      <div className="fixed inset-0 -z-10">
 
-        <div className="text-center max-w-3xl">
+        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/20 blur-3xl rounded-full" />
 
-          <p className="text-blue-400 mb-3">
-            Hello, I'm
-          </p>
+        <div className="absolute bottom-20 right-20 w-72 h-72 bg-purple-500/20 blur-3xl rounded-full" />
 
-          <h1 className="text-6xl font-bold mb-5">
-            Shafira Putri Ardita
+      </div>
+
+      {/* NAVBAR */}
+
+      <nav className="sticky top-0 backdrop-blur-md bg-black/30 border-b border-white/10 z-50">
+
+        <div className="max-w-6xl mx-auto flex justify-between items-center px-8 py-5">
+
+          <h1 className="font-bold text-xl">
+            Shafira.dev
           </h1>
 
-          <p className="text-gray-400 text-lg mb-8">
-            Web Developer • UI Designer • Frontend Web Developer • Building modern websites
-            with Next.js and Tailwind CSS • Administration
+          <div className="flex gap-6 text-sm">
+
+            <a href="#about">About</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#contact">Contact</a>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+
+      {/* HERO */}
+
+      <section className="min-h-screen flex items-center justify-center px-8">
+
+        <div className="text-center max-w-4xl">
+
+          <div className="w-40 h-40 rounded-full border mx-auto mb-8 bg-zinc-800" />
+
+          <p className="text-blue-400 mb-3">
+            Frontend Developer
           </p>
 
-          <div className="flex gap-4 justify-center flex-wrap">
+          <h1 className="text-7xl font-bold mb-6">
+
+            Shafira
+            <span className="text-blue-400">
+              {" "}Ardita
+            </span>
+
+          </h1>
+
+          <p className="text-gray-400 text-xl leading-9 mb-10">
+
+            Building modern websites using
+            Next.js, React, Tailwind CSS
+            and interactive UI experiences.
+
+          </p>
+
+          <div className="flex justify-center gap-5 flex-wrap">
 
             <a
-              href="#about"
-              className="bg-white text-black px-6 py-3 rounded-xl"
+              href="#projects"
+              className="bg-white text-black px-8 py-3 rounded-2xl"
             >
-              About Me
+              View Projects
             </a>
 
             <a
-              href="#project"
-              className="border border-white px-6 py-3 rounded-xl"
+              href="https://github.com/shafiraardita"
+              className="border border-white/30 px-8 py-3 rounded-2xl"
             >
-              Projects
+              GitHub
             </a>
 
           </div>
@@ -44,56 +91,74 @@ export default function Home() {
 
 
       {/* ABOUT */}
+
       <section
         id="about"
-        className="py-24 px-8 max-w-5xl mx-auto"
+        className="py-32 px-8 max-w-6xl mx-auto"
       >
 
-        <h2 className="text-4xl font-bold mb-8">
+        <h2 className="text-5xl font-bold mb-10">
+
           About Me
+
         </h2>
 
-        <p className="text-gray-400 leading-8">
-          Saya adalah alumni mahasiswa Teknik Informatika yang memiliki minat dan pengalaman di bidang frontend web development serta administrasi. Saya adalah developer yang fokus pada pengembangan website modern, UI/UX, dan teknologi frontend. Saya senang membangun aplikasi yang cepat, responsive, dan mudah digunakan. Saya terbiasa membuat tampilan website dan dashboard menggunakan HTML, CSS, JavaScript, serta mengelola dan menginput data administrasi dengan teliti dan terstruktur.
-          Saya memiliki pengalaman dalam pembuatan tampilan dashboard admin, monitoring data, manajemen pengguna, pagination, tracking laporan, dan visualisasi peta menggunakan Leaflet Maps. Selain itu, saya juga pernah membantu pengerjaan project akademik, pengembangan website sederhana, serta pekerjaan administrasi yang membutuhkan ketelitian dan pengelolaan data.
-          Saya adalah pribadi yang cepat belajar, disiplin, teliti, mampu bekerja secara individu maupun tim, serta memiliki komunikasi yang baik dalam menyelesaikan pekerjaan dan beradaptasi dengan lingkungan kerja baru.
-        </p>
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-10">
+
+          <p className="text-gray-300 text-lg leading-9">
+
+            Saya adalah developer yang fokus
+            membangun aplikasi web modern,
+            responsive dan user friendly.
+            Saya tertarik pada frontend,
+            UI/UX, performa aplikasi dan
+            deployment cloud.
+
+          </p>
+
+        </div>
 
       </section>
 
 
       {/* SKILLS */}
-      <section className="py-24 px-8 max-w-5xl mx-auto">
 
-        <h2 className="text-4xl font-bold mb-8">
+      <section
+        id="skills"
+        className="py-24 px-8 max-w-6xl mx-auto"
+      >
+
+        <h2 className="text-5xl font-bold mb-10">
+
           Skills
+
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid md:grid-cols-3 gap-6">
 
-          <div className="border p-5 rounded-xl">
-            HTML
-          </div>
+          {[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Next.js",
+            "Tailwind",
+            "Git",
+            "GitHub",
+            "Vercel"
 
-          <div className="border p-5 rounded-xl">
-            CSS
-          </div>
+          ].map((skill) => (
 
-          <div className="border p-5 rounded-xl">
-            JavaScript
-          </div>
+            <div
+              key={skill}
+              className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition"
+            >
 
-          <div className="border p-5 rounded-xl">
-            Next.js
-          </div>
+              {skill}
 
-          <div className="border p-5 rounded-xl">
-            React
-          </div>
+            </div>
 
-          <div className="border p-5 rounded-xl">
-            Tailwind
-          </div>
+          ))}
 
         </div>
 
@@ -101,40 +166,90 @@ export default function Home() {
 
 
       {/* PROJECT */}
+
       <section
-        id="project"
-        className="py-24 px-8 max-w-5xl mx-auto"
+        id="projects"
+        className="py-24 px-8 max-w-6xl mx-auto"
       >
 
-        <h2 className="text-4xl font-bold mb-8">
-          Projects
+        <h2 className="text-5xl font-bold mb-10">
+
+          Featured Projects
+
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-8">
 
-          <div className="border rounded-2xl p-6">
+          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
 
-            <h3 className="text-2xl font-bold mb-3">
+            <div className="h-52 bg-zinc-800 rounded-2xl mb-6" />
+
+            <h3 className="text-2xl font-bold mb-4">
+
               Portfolio Website
+
             </h3>
 
             <p className="text-gray-400">
-              Website portfolio menggunakan
-              Next.js + Tailwind.
+
+              Personal portfolio using
+              Next.js and Tailwind CSS.
+
             </p>
 
           </div>
 
-          <div className="border rounded-2xl p-6">
 
-            <h3 className="text-2xl font-bold mb-3">
+          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
+
+            <div className="h-52 bg-zinc-800 rounded-2xl mb-6" />
+
+            <h3 className="text-2xl font-bold mb-4">
+
               Dashboard App
+
             </h3>
 
             <p className="text-gray-400">
-              Sistem dashboard modern
-              responsive.
+
+              Responsive dashboard UI.
+
             </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* EXPERIENCE */}
+
+      <section className="py-24 px-8 max-w-6xl mx-auto">
+
+        <h2 className="text-5xl font-bold mb-10">
+
+          Journey
+
+        </h2>
+
+        <div className="space-y-8">
+
+          <div className="border-l-2 pl-6">
+
+            2024 — Start learning HTML CSS
+
+          </div>
+
+          <div className="border-l-2 pl-6">
+
+            2025 — React Development
+
+          </div>
+
+          <div className="border-l-2 pl-6">
+
+            2026 — Next.js + Deployment
 
           </div>
 
@@ -144,17 +259,43 @@ export default function Home() {
 
 
       {/* CONTACT */}
-      <section className="py-24 text-center">
 
-        <h2 className="text-4xl font-bold mb-5">
-          Contact
+      <section
+        id="contact"
+        className="py-32 text-center px-8"
+      >
+
+        <h2 className="text-5xl font-bold mb-8">
+
+          Let's Work Together
+
         </h2>
 
-        <p className="text-gray-400">
-          emailkamu@example.com
+        <p className="text-gray-400 mb-8">
+
+          shafiraardita0@gmail.com
+
         </p>
 
+        <a
+          href="mailto:shafiraardita0@gmail.com"
+          className="bg-white text-black px-8 py-4 rounded-2xl"
+        >
+
+          Contact Me
+
+        </a>
+
       </section>
+
+
+      {/* FOOTER */}
+
+      <footer className="py-10 text-center text-gray-500">
+
+        © 2026 Shafira Putri Ardita
+
+      </footer>
 
     </main>
   );
