@@ -12,12 +12,12 @@ export default function Home() {
           </p>
 
           <h1 className="text-6xl font-bold mb-5">
-            Shafira Ardita
+            Shafira Putri Ardita
           </h1>
 
           <p className="text-gray-400 text-lg mb-8">
-            Web Developer • UI Designer • Building modern websites
-            with Next.js and Tailwind CSS
+            Web Developer • UI Designer • Frontend Web Developer • Building modern websites
+            with Next.js and Tailwind CSS • Administration
           </p>
 
           <div className="flex gap-4 justify-center flex-wrap">
@@ -54,11 +54,9 @@ export default function Home() {
         </h2>
 
         <p className="text-gray-400 leading-8">
-          Saya adalah developer yang fokus pada
-          pengembangan website modern,
-          UI/UX, dan teknologi frontend.
-          Saya senang membangun aplikasi yang cepat,
-          responsive, dan mudah digunakan.
+          Saya adalah alumni mahasiswa Teknik Informatika yang memiliki minat dan pengalaman di bidang frontend web development serta administrasi. Saya adalah developer yang fokus pada pengembangan website modern, UI/UX, dan teknologi frontend. Saya senang membangun aplikasi yang cepat, responsive, dan mudah digunakan. Saya terbiasa membuat tampilan website dan dashboard menggunakan HTML, CSS, JavaScript, serta mengelola dan menginput data administrasi dengan teliti dan terstruktur.
+          Saya memiliki pengalaman dalam pembuatan tampilan dashboard admin, monitoring data, manajemen pengguna, pagination, tracking laporan, dan visualisasi peta menggunakan Leaflet Maps. Selain itu, saya juga pernah membantu pengerjaan project akademik, pengembangan website sederhana, serta pekerjaan administrasi yang membutuhkan ketelitian dan pengelolaan data.
+          Saya adalah pribadi yang cepat belajar, disiplin, teliti, mampu bekerja secara individu maupun tim, serta memiliki komunikasi yang baik dalam menyelesaikan pekerjaan dan beradaptasi dengan lingkungan kerja baru.
         </p>
 
       </section>
