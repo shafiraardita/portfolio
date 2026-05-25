@@ -40,12 +40,10 @@ Shafira Putri Ardita
 
 <p className="text-gray-400 leading-8 mb-8">
 
-Mahasiswa Teknik Informatika
-dengan pengalaman frontend,
-UI UX, administrasi,
-pengelolaan data,
-dashboard monitoring
-dan digital documentation.
+Saya adalah lulusan Teknik Informatika yang memiliki minat dan pengalaman di bidang frontend web development serta administrasi. Saya adalah developer yang fokus pada pengembangan website modern, UI/UX, dan teknologi frontend. Saya senang membangun aplikasi yang cepat, responsive, dan mudah digunakan.
+Selain memiliki ketertarikan di bidang teknologi, saya juga memiliki pengalaman dalam pekerjaan administrasi seperti pengelolaan data, input data, penyusunan dokumen, pengarsipan, serta membantu kebutuhan operasional dan administrasi lainnya. Saya terbiasa bekerja dengan teliti, rapi, dan terorganisir dalam mengelola data maupun dokumen.
+Di bidang teknologi, saya memiliki pengalaman membuat tampilan dashboard admin, monitoring data, manajemen pengguna, pagination, tracking laporan, dan visualisasi peta menggunakan Leaflet Maps menggunakan HTML, CSS, dan JavaScript. Saya juga pernah membantu pengerjaan project akademik, pengembangan website sederhana, serta kebutuhan administrasi berbasis digital.
+Saya adalah pribadi yang cepat belajar, disiplin, bertanggung jawab, mampu bekerja secara individu maupun tim, serta memiliki komunikasi yang baik dalam menyelesaikan pekerjaan dan beradaptasi dengan lingkungan kerja baru.
 
 </p>
 
@@ -168,7 +166,11 @@ src="/certificates/bappeda.pdf"
 width="100%"
 height="700"
 />
-
+<embed
+src="/certificates/kampusmerdeka.pdf"
+width="100%"
+height="700"
+/>
 </div>
 
 </section>
