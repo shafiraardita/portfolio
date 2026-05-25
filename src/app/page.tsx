@@ -518,6 +518,11 @@ export default function Home() {
               width="100%"
               height="400"
             />
+            <embed
+              src="/certificates/kampusmerderka.pdf"
+              width="100%"
+              height="400"
+            />
 
           </div>
 
