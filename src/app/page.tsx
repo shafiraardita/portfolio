@@ -1,406 +1,550 @@
 import Image from "next/image";
 import {
-FaGithub,
-FaLinkedin,
-FaInstagram,
-FaDownload
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaDownload,
 } from "react-icons/fa";
 
 export default function Home() {
+  return (
+    <main className="bg-[#050505] text-white">
+
+      {/* Background Glow */}
+
+      <div className="fixed inset-0 -z-10">
+
+        <div className="
+        absolute
+        top-0
+        left-0
+        w-[500px]
+        h-[500px]
+        bg-blue-500/10
+        blur-[120px]
+        rounded-full
+        " />
+
+        <div className="
+        absolute
+        bottom-0
+        right-0
+        w-[500px]
+        h-[500px]
+        bg-purple-500/10
+        blur-[120px]
+        rounded-full
+        " />
+
+      </div>
+
+
+      {/* NAVBAR */}
+
+      <nav className="
+      sticky
+      top-0
+      z-50
+      bg-black/40
+      backdrop-blur-xl
+      border-b
+      border-white/10
+      ">
+
+        <div className="
+        max-w-7xl
+        mx-auto
+        flex
+        justify-between
+        items-center
+        px-8
+        py-5
+        ">
+
+          <h1 className="font-bold text-xl">
+            Shafira.dev
+          </h1>
+
+          <div className="
+          hidden
+          md:flex
+          gap-8
+          text-sm
+          ">
+
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#certificate">Certificate</a>
+            <a href="#project">Project</a>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+
+
+      {/* HERO */}
+
+      <section className="
+      min-h-screen
+      flex
+      items-center
+      px-8
+      ">
+
+        <div className="
+        max-w-7xl
+        mx-auto
+        grid
+        md:grid-cols-2
+        gap-16
+        items-center
+        ">
+
+          <div>
+
+            <p className="
+            text-blue-400
+            mb-4
+            ">
+
+              Frontend Developer • UI UX • Administration
+
+            </p>
+
+            <h1 className="
+            text-6xl
+            md:text-7xl
+            font-bold
+            mb-8
+            leading-tight
+            ">
+
+              Shafira Putri
+              <span className="text-blue-400">
+                {" "}Ardita
+              </span>
+
+            </h1>
+
+            <p className="
+            text-gray-400
+            leading-9
+            max-w-xl
+            mb-8
+            ">
+
+              Mahasiswa Teknik Informatika dengan
+              pengalaman frontend web development,
+              administrasi, pengelolaan data,
+              dashboard monitoring, UI UX Design,
+              dan dokumentasi digital.
+
+            </p>
+
+            <div className="
+            flex
+            gap-4
+            flex-wrap
+            ">
+
+              <a
+                href="/cv/cv.pdf"
+                className="
+                bg-white
+                text-black
+                px-6
+                py-3
+                rounded-2xl
+                flex
+                items-center
+                gap-2
+                "
+              >
+
+                <FaDownload />
+
+                CV
+
+              </a>
+
+              <a
+                href="https://github.com/shafiraardita"
+                target="_blank"
+                className="
+                border
+                border-white/20
+                p-4
+                rounded-2xl
+                "
+              >
+
+                <FaGithub />
+
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/shafira-putri-ardita-s-t-b7396a29a/"
+                target="_blank"
+                className="
+                border
+                border-white/20
+                p-4
+                rounded-2xl
+                "
+              >
+
+                <FaLinkedin />
+
+              </a>
+
+              <a
+                href="https://instagram.com/shafiraardita_"
+                target="_blank"
+                className="
+                border
+                border-white/20
+                p-4
+                rounded-2xl
+                "
+              >
+
+                <FaInstagram />
+
+              </a>
+
+            </div>
+
+          </div>
+
+
+
+          <div className="flex justify-center">
+
+            <div className="
+            bg-white/5
+            backdrop-blur-xl
+            p-6
+            rounded-[40px]
+            border
+            border-white/10
+            ">
+
+              <Image
+                src="/profile/profile.jpeg"
+                alt="profile"
+                width={320}
+                height={320}
+                className="
+                rounded-3xl
+                object-cover
+                "
+              />
+
+            </div>
+
+          </div>
 
-return (
+        </div>
 
-<main className="bg-[#050505] text-white">
+      </section>
 
-{/* background */}
 
-<div className="fixed inset-0 -z-10">
+
+      {/* STATS */}
+
+      <section className="
+      max-w-7xl
+      mx-auto
+      grid
+      md:grid-cols-4
+      gap-6
+      px-8
+      pb-24
+      ">
+
+        {[
+          ["2+", "Experience"],
+          ["1", "Major Project"],
+          ["2", "Certificates"],
+          ["3+", "Organization"],
+        ].map(([n, t]) => (
 
-<div className="
-absolute
-top-0
-left-0
-w-[500px]
-h-[500px]
-bg-blue-500/10
-blur-[120px]
-rounded-full
-"/>
+          <div
+            key={t}
+            className="
+            bg-white/5
+            rounded-3xl
+            p-8
+            border
+            border-white/10
+            "
+          >
 
-<div className="
-absolute
-bottom-0
-right-0
-w-[500px]
-h-[500px]
-bg-purple-500/10
-blur-[120px]
-rounded-full
-"/>
+            <h2 className="text-4xl mb-2">
+              {n}
+            </h2>
 
-</div>
+            <p className="text-gray-400">
+              {t}
+            </p>
 
+          </div>
 
-{/* navbar */}
+        ))}
 
-<nav className="
-sticky
-top-0
-z-50
-backdrop-blur-xl
-bg-black/30
-border-b
-border-white/10
-">
-
-<div className="
-max-w-7xl
-mx-auto
-flex
-justify-between
-items-center
-px-8
-py-5
-">
+      </section>
 
-<h1 className="font-bold">
-
-Shafira.dev
-
-</h1>
-
-<div className="flex gap-6">
-
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#project">Project</a>
-<a href="#contact">Contact</a>
-
-</div>
-
-</div>
-
-</nav>
-
-
-{/* hero */}
-
-<section
-className="
-min-h-screen
-flex
-items-center
-px-8
-"
->
-
-<div className="
-max-w-7xl
-mx-auto
-grid
-md:grid-cols-2
-gap-16
-items-center
-">
-
-<div>
-
-<p className="text-blue-400 mb-4">
-
-Frontend Developer • UI UX • Administration
-
-</p>
-
-<h1 className="
-text-7xl
-font-bold
-mb-8
-">
-
-Shafira Putri Ardita
-
-</h1>
-
-<p className="
-text-gray-400
-leading-9
-mb-8
-">
-
-Mahasiswa Teknik Informatika
-dengan pengalaman frontend,
-administrasi,
-pengelolaan data,
-dashboard monitoring,
-serta UI UX Design.
-
-</p>
-
-<div className="
-flex
-gap-4
-flex-wrap
-">
-
-<a
-href="/cv/cv.pdf"
-className="
-bg-white
-text-black
-px-6
-py-3
-rounded-2xl
-flex
-gap-2
-"
->
-
-<FaDownload/>
-
-CV
-
-</a>
-
-<a
-href="https://github.com/shafiraardita"
-target="_blank"
-className="
-border
-px-5
-py-3
-rounded-2xl
-"
->
-
-<FaGithub/>
-
-</a>
-
-<a
-href="https://www.linkedin.com/in/shafira-putri-ardita-s-t-b7396a29a/"
-target="_blank"
-className="
-border
-px-5
-py-3
-rounded-2xl
-"
->
-
-<FaLinkedin/>
-
-</a>
-
-<a
-href="https://instagram.com/shafiraardita_"
-target="_blank"
-className="
-border
-px-5
-py-3
-rounded-2xl
-"
->
 
-<FaInstagram/>
 
-</a>
+      {/* ABOUT */}
 
-</div>
+      <section
+        id="about"
+        className="
+        max-w-7xl
+        mx-auto
+        px-8
+        py-24
+        "
+      >
 
-</div>
+        <h2 className="
+        text-5xl
+        font-bold
+        mb-12
+        ">
 
+          About Me
 
-<div className="flex justify-center">
+        </h2>
 
-<div className="
-bg-white/5
-p-6
-rounded-[40px]
-backdrop-blur-xl
-border
-border-white/10
-">
+        <div className="
+        grid
+        md:grid-cols-3
+        gap-6
+        ">
 
-<Image
-src="/profile/profile.jpeg"
-alt="profile"
-width={320}
-height={320}
-className="
-rounded-3xl
-object-cover
-"
-/>
+          <div className="bg-white/5 p-8 rounded-3xl">
+            Frontend Development
+          </div>
 
-</div>
+          <div className="bg-white/5 p-8 rounded-3xl">
+            Administration
+          </div>
 
-</div>
+          <div className="bg-white/5 p-8 rounded-3xl">
+            UI UX Design
+          </div>
 
-</div>
+        </div>
 
-</section>
+      </section>
 
 
-{/* about */}
 
-<section
-id="about"
-className="
-max-w-7xl
-mx-auto
-px-8
-py-24
-"
->
+      {/* EXPERIENCE */}
 
-<div className="
-grid
-md:grid-cols-3
-gap-6
-">
+      <section
+        id="experience"
+        className="
+        max-w-7xl
+        mx-auto
+        px-8
+        py-24
+        "
+      >
 
-<div className="
-bg-white/5
-p-8
-rounded-3xl
-">
+        <h2 className="
+        text-5xl
+        font-bold
+        mb-12
+        ">
 
-<h3 className="mb-3">
+          Experience
 
-Frontend
+        </h2>
 
-</h3>
+        <div className="space-y-8">
 
-<p className="text-gray-400">
+          <div className="
+          border-l-2
+          border-blue-500
+          pl-6
+          ">
 
-HTML
-CSS
-JavaScript
-Dashboard
+            <h3>
+              2022–2025
+            </h3>
 
-</p>
+            <p className="text-gray-400">
 
-</div>
+              Sekretaris Divisi Komunikasi dan Informasi — HMTI
 
-<div className="
-bg-white/5
-p-8
-rounded-3xl
-">
+            </p>
 
-<h3 className="mb-3">
+          </div>
 
-Administration
+          <div className="
+          border-l-2
+          border-blue-500
+          pl-6
+          ">
 
-</h3>
+            <h3>
+              2024
+            </h3>
 
-<p className="text-gray-400">
+            <p className="text-gray-400">
 
-Arsip
-Input Data
-Dokumen
+              MSIB UI UX Designer
 
-</p>
+            </p>
 
-</div>
+          </div>
 
-<div className="
-bg-white/5
-p-8
-rounded-3xl
-">
+          <div className="
+          border-l-2
+          border-blue-500
+          pl-6
+          ">
 
-<h3 className="mb-3">
+            <h3>
+              2022
+            </h3>
 
-UI UX
+            <p className="text-gray-400">
 
-</h3>
+              Staff Arsip Administrasi — Bappedalitbang
 
-<p className="text-gray-400">
+            </p>
 
-Wireframe
-Prototype
-Research
+          </div>
 
-</p>
+        </div>
 
-</div>
+      </section>
 
-</div>
 
-</section>
 
+      {/* CERTIFICATE */}
 
-{/* experience */}
+      <section
+        id="certificate"
+        className="
+        max-w-7xl
+        mx-auto
+        px-8
+        py-24
+        "
+      >
 
-<section
-id="experience"
-className="
-max-w-7xl
-mx-auto
-px-8
-py-24
-"
->
+        <h2 className="
+        text-5xl
+        font-bold
+        mb-12
+        ">
 
-<h2 className="
-text-5xl
-font-bold
-mb-12
-">
+          Certificates
 
-Experience
+        </h2>
 
-</h2>
+        <div className="
+        grid
+        md:grid-cols-2
+        gap-8
+        ">
 
-<div className="space-y-8">
+          <div className="
+          bg-white/5
+          rounded-3xl
+          p-8
+          ">
 
-<div className="
-bg-white/5
-p-8
-rounded-3xl
-">
+            <embed
+              src="/certificates/bappeda.pdf"
+              width="100%"
+              height="400"
+            />
 
-2022–2025
+          </div>
 
-Sekretaris Divisi Komunikasi dan Informasi
+        </div>
 
-HMTI
+      </section>
 
-</div>
 
-<div className="
-bg-white/5
-p-8
-rounded-3xl
-">
 
-2024
+      {/* PROJECT */}
 
-MSIB UI UX Designer
+      <section
+        id="project"
+        className="
+        max-w-7xl
+        mx-auto
+        px-8
+        py-24
+        "
+      >
 
-</div>
+        <h2 className="
+        text-5xl
+        font-bold
+        mb-12
+        ">
 
-<div className="
-bg-white/5
-p-8
-rounded-3xl
-">
+          Featured Project
 
-2022
+        </h2>
 
-Staff Arsip Administrasi
-Bappedalitbang
+        <div className="
+        bg-white/5
+        rounded-3xl
+        p-8
+        ">
 
-</div>
+          <h3 className="
+          text-3xl
+          mb-4
+          ">
 
-</div>
+            Sistem Monitoring dan Evaluasi
+            Kecelakaan Lalu Lintas Kota Bogor
 
-</section>
+          </h3>
 
-</main>
+          <p className="text-gray-400">
 
-)
+            Dashboard monitoring,
+            tracking laporan,
+            pagination,
+            Leaflet Maps,
+            visualisasi data.
 
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      {/* FOOTER */}
+
+      <footer className="
+      border-t
+      border-white/10
+      py-10
+      text-center
+      text-gray-500
+      ">
+
+        © 2026 Shafira Putri Ardita
+
+      </footer>
+
+    </main>
+  );
 }
