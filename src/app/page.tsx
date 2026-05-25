@@ -122,10 +122,7 @@ export default function Home() {
             leading-tight
             ">
 
-              Shafira Putri
-              <span className="text-blue-400">
-                {" "}Ardita
-              </span>
+              Shafira Putri Ardita
 
             </h1>
 
@@ -136,7 +133,7 @@ export default function Home() {
             mb-8
             ">
 
-              Mahasiswa Teknik Informatika dengan
+              Alumni Teknik Informatika dengan
               pengalaman frontend web development,
               administrasi, pengelolaan data,
               dashboard monitoring, UI UX Design,
@@ -348,86 +345,139 @@ export default function Home() {
       {/* EXPERIENCE */}
 
       <section
-        id="experience"
-        className="
-        max-w-7xl
-        mx-auto
-        px-8
-        py-24
-        "
+      id="experience"
+      className="
+      max-w-7xl
+      mx-auto
+      px-8
+      py-24
+      "
       >
 
-        <h2 className="
-        text-5xl
-        font-bold
-        mb-12
-        ">
+      <h2 className="
+      text-5xl
+      font-bold
+      mb-12
+      ">
 
-          Experience
+      Experience
 
-        </h2>
+      </h2>
 
-        <div className="space-y-8">
+      <div className="space-y-8">
 
-          <div className="
-          border-l-2
-          border-blue-500
-          pl-6
-          ">
+      <div className="
+      border-l-2
+      border-blue-500
+      pl-6
+      ">
 
-            <h3>
-              2022–2025
-            </h3>
+      <h3>
 
-            <p className="text-gray-400">
+      2022–2025
 
-              Sekretaris Divisi Komunikasi dan Informasi — HMTI
+      </h3>
 
-            </p>
+      <p className="text-gray-400">
 
-          </div>
+      Sekretaris Divisi Komunikasi dan Informasi —
+      Himpunan Mahasiswa Teknik Informatika
 
-          <div className="
-          border-l-2
-          border-blue-500
-          pl-6
-          ">
+      </p>
 
-            <h3>
-              2024
-            </h3>
+      </div>
 
-            <p className="text-gray-400">
 
-              MSIB UI UX Designer
+      <div className="
+      border-l-2
+      border-blue-500
+      pl-6
+      ">
 
-            </p>
+      <h3>
 
-          </div>
+      2024
 
-          <div className="
-          border-l-2
-          border-blue-500
-          pl-6
-          ">
+      </h3>
 
-            <h3>
-              2022
-            </h3>
+      <p className="text-gray-400">
 
-            <p className="text-gray-400">
+      MSIB UI UX Designer —
+      Kampus Merdeka
 
-              Staff Arsip Administrasi — Bappedalitbang
+      </p>
 
-            </p>
+      </div>
 
-          </div>
 
-        </div>
+      <div className="
+      border-l-2
+      border-blue-500
+      pl-6
+      ">
+
+      <h3>
+
+      2024
+
+      </h3>
+
+      <p className="text-gray-400">
+
+      Project Manager —
+      Project Tugas Mata Kuliah
+
+      </p>
+
+      </div>
+
+
+      <div className="
+      border-l-2
+      border-blue-500
+      pl-6
+      ">
+
+      <h3>
+
+      2022
+
+      </h3>
+
+      <p className="text-gray-400">
+
+      Staff Arsip Administrasi —
+      Bappedalitbang
+
+      </p>
+
+      </div>
+
+
+      <div className="
+      border-l-2
+      border-blue-500
+      pl-6
+      ">
+
+      <h3>
+
+      2020
+
+      </h3>
+
+      <p className="text-gray-400">
+
+      Customer Service —
+      Ahass Catur Saka Mandiri
+
+      </p>
+
+      </div>
+
+      </div>
 
       </section>
-
-
 
       {/* CERTIFICATE */}
 
