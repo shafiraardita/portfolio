@@ -1,302 +1,179 @@
+import Image from "next/image";
+import {
+FaGithub,
+FaLinkedin,
+FaInstagram,
+FaDownload
+} from "react-icons/fa";
+
 export default function Home() {
-  return (
-    <main className="bg-black text-white scroll-smooth">
 
-      {/* BACKGROUND */}
-      <div className="fixed inset-0 -z-10">
+return (
 
-        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/20 blur-3xl rounded-full" />
+<main className="bg-black text-white">
 
-        <div className="absolute bottom-20 right-20 w-72 h-72 bg-purple-500/20 blur-3xl rounded-full" />
+<div className="fixed inset-0 -z-10">
 
-      </div>
+<div className="absolute top-20 left-20 w-96 h-96 bg-blue-500/20 blur-3xl rounded-full"/>
 
-      {/* NAVBAR */}
+<div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/20 blur-3xl rounded-full"/>
 
-      <nav className="sticky top-0 backdrop-blur-md bg-black/30 border-b border-white/10 z-50">
+</div>
 
-        <div className="max-w-6xl mx-auto flex justify-between items-center px-8 py-5">
+<section className="min-h-screen flex items-center justify-center px-8">
 
-          <h1 className="font-bold text-xl">
-            Shafira.dev
-          </h1>
+<div className="max-w-6xl grid md:grid-cols-2 gap-16 items-center">
 
-          <div className="flex gap-6 text-sm">
+<div>
 
-            <a href="#about">About</a>
+<p className="text-blue-400 mb-4">
 
-            <a href="#skills">Skills</a>
+Frontend Developer • Administration
 
-            <a href="#projects">Projects</a>
+</p>
 
-            <a href="#contact">Contact</a>
+<h1 className="text-6xl font-bold mb-6">
 
-          </div>
+Shafira Putri Ardita
 
-        </div>
+</h1>
 
-      </nav>
+<p className="text-gray-400 leading-8 mb-8">
 
+Mahasiswa Teknik Informatika
+dengan pengalaman frontend,
+UI UX, administrasi,
+pengelolaan data,
+dashboard monitoring
+dan digital documentation.
 
-      {/* HERO */}
+</p>
 
-      <section className="min-h-screen flex items-center justify-center px-8">
+<div className="flex gap-4 flex-wrap">
 
-        <div className="text-center max-w-4xl">
+<a
+href="/cv/cv.pdf"
+download
+className="bg-white text-black px-6 py-3 rounded-2xl flex gap-2"
+>
 
-          <div className="w-40 h-40 rounded-full border mx-auto mb-8 bg-zinc-800" />
+<FaDownload/>
 
-          <p className="text-blue-400 mb-3">
-            Frontend Developer
-          </p>
+CV
 
-          <h1 className="text-7xl font-bold mb-6">
+</a>
 
-            Shafira
-            <span className="text-blue-400">
-              {" "}Ardita
-            </span>
+<a
+href="https://github.com/shafiraardita"
+className="border px-6 py-3 rounded-2xl"
+>
 
-          </h1>
+<FaGithub/>
 
-          <p className="text-gray-400 text-xl leading-9 mb-10">
+</a>
 
-            Building modern websites using
-            Next.js, React, Tailwind CSS
-            and interactive UI experiences.
+<a
+href="https://www.linkedin.com/in/shafira-putri-ardita-s-t-b7396a29a/"
+className="border px-6 py-3 rounded-2xl"
+>
 
-          </p>
+<FaLinkedin/>
 
-          <div className="flex justify-center gap-5 flex-wrap">
+</a>
 
-            <a
-              href="#projects"
-              className="bg-white text-black px-8 py-3 rounded-2xl"
-            >
-              View Projects
-            </a>
+<a
+href="https://instagram.com/shafiraardita_"
+className="border px-6 py-3 rounded-2xl"
+>
 
-            <a
-              href="https://github.com/shafiraardita"
-              className="border border-white/30 px-8 py-3 rounded-2xl"
-            >
-              GitHub
-            </a>
+<FaInstagram/>
 
-          </div>
+</a>
 
-        </div>
+</div>
 
-      </section>
+</div>
 
+<div className="flex justify-center">
 
-      {/* ABOUT */}
+<Image
+src="/profile/profile.jpeg"
+alt="profile"
+width={380}
+height={380}
+className="
+rounded-full
+border
+border-white/20
+object-cover
+w-[380px]
+h-[380px]
+shadow-2xl
+"
+/>
 
-      <section
-        id="about"
-        className="py-32 px-8 max-w-6xl mx-auto"
-      >
+</div>
 
-        <h2 className="text-5xl font-bold mb-10">
+</div>
 
-          About Me
+</section>
+<section className="py-32 px-8">
 
-        </h2>
+<h2 className="text-5xl font-bold text-center mb-10">
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-10">
+Curriculum Vitae
 
-          <p className="text-gray-300 text-lg leading-9">
+</h2>
 
-            Saya adalah developer yang fokus
-            membangun aplikasi web modern,
-            responsive dan user friendly.
-            Saya tertarik pada frontend,
-            UI/UX, performa aplikasi dan
-            deployment cloud.
+<div className="max-w-4xl mx-auto bg-white/5 rounded-3xl p-10 text-center">
 
-          </p>
+<p className="text-gray-400 mb-8">
 
-        </div>
+Download CV lengkap saya
 
-      </section>
+</p>
 
+<a
+href="/cv/cv.pdf"
+download
+className="
+bg-white
+text-black
+px-8
+py-4
+rounded-2xl
+inline-block
+"
+>
 
-      {/* SKILLS */}
+Download CV
 
-      <section
-        id="skills"
-        className="py-24 px-8 max-w-6xl mx-auto"
-      >
+</a>
 
-        <h2 className="text-5xl font-bold mb-10">
+</div>
 
-          Skills
+</section>
+<section className="py-32 px-8">
 
-        </h2>
+<h2 className="text-5xl text-center mb-10">
 
-        <div className="grid md:grid-cols-3 gap-6">
+Certificates
 
-          {[
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Next.js",
-            "Tailwind",
-            "Git",
-            "GitHub",
-            "Vercel"
+</h2>
 
-          ].map((skill) => (
+<div className="max-w-5xl mx-auto">
 
-            <div
-              key={skill}
-              className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition"
-            >
+<embed
+src="/certificates/bappeda.pdf"
+width="100%"
+height="700"
+/>
 
-              {skill}
+</div>
 
-            </div>
+</section>
+</main>
 
-          ))}
+)
 
-        </div>
-
-      </section>
-
-
-      {/* PROJECT */}
-
-      <section
-        id="projects"
-        className="py-24 px-8 max-w-6xl mx-auto"
-      >
-
-        <h2 className="text-5xl font-bold mb-10">
-
-          Featured Projects
-
-        </h2>
-
-        <div className="grid md:grid-cols-2 gap-8">
-
-          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
-
-            <div className="h-52 bg-zinc-800 rounded-2xl mb-6" />
-
-            <h3 className="text-2xl font-bold mb-4">
-
-              Portfolio Website
-
-            </h3>
-
-            <p className="text-gray-400">
-
-              Personal portfolio using
-              Next.js and Tailwind CSS.
-
-            </p>
-
-          </div>
-
-
-          <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
-
-            <div className="h-52 bg-zinc-800 rounded-2xl mb-6" />
-
-            <h3 className="text-2xl font-bold mb-4">
-
-              Dashboard App
-
-            </h3>
-
-            <p className="text-gray-400">
-
-              Responsive dashboard UI.
-
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* EXPERIENCE */}
-
-      <section className="py-24 px-8 max-w-6xl mx-auto">
-
-        <h2 className="text-5xl font-bold mb-10">
-
-          Journey
-
-        </h2>
-
-        <div className="space-y-8">
-
-          <div className="border-l-2 pl-6">
-
-            2024 — Start learning HTML CSS
-
-          </div>
-
-          <div className="border-l-2 pl-6">
-
-            2025 — React Development
-
-          </div>
-
-          <div className="border-l-2 pl-6">
-
-            2026 — Next.js + Deployment
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* CONTACT */}
-
-      <section
-        id="contact"
-        className="py-32 text-center px-8"
-      >
-
-        <h2 className="text-5xl font-bold mb-8">
-
-          Let's Work Together
-
-        </h2>
-
-        <p className="text-gray-400 mb-8">
-
-          shafiraardita0@gmail.com
-
-        </p>
-
-        <a
-          href="mailto:shafiraardita0@gmail.com"
-          className="bg-white text-black px-8 py-4 rounded-2xl"
-        >
-
-          Contact Me
-
-        </a>
-
-      </section>
-
-
-      {/* FOOTER */}
-
-      <footer className="py-10 text-center text-gray-500">
-
-        © 2026 Shafira Putri Ardita
-
-      </footer>
-
-    </main>
-  );
 }
