@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaDownload,
 } from "react-icons/fa";
+import ProjectGallery from "./components/ProjectGallery";
 
 export default function Home() {
   return (
@@ -519,7 +520,7 @@ export default function Home() {
               height="400"
             />
             <embed
-              src="/certificates/kampusmerderka.pdf"
+              src="/certificates/kampusmerdeka.pdf"
               width="100%"
               height="400"
             />
@@ -534,7 +535,45 @@ export default function Home() {
 
       {/* PROJECT */}
 
-      import ProjectGallery from "./components/ProjectGallery";
+      <section
+      id="project"
+      className="
+      max-w-7xl
+      mx-auto
+      px-8
+      py-24
+      "
+      >
+
+      <h2 className="
+      text-5xl
+      font-bold
+      mb-6
+      ">
+
+      Featured Project
+
+      </h2>
+
+      <p className="
+      text-gray-400
+      mb-10
+      max-w-3xl
+      ">
+
+      Sistem Monitoring dan Evaluasi
+      Kecelakaan Lalu Lintas Kota Bogor
+
+      Monitoring dashboard,
+      tracking laporan,
+      Leaflet Maps,
+      visualisasi data.
+
+      </p>
+
+      <ProjectGallery/>
+
+      </section>
 
 
       {/* FOOTER */}
