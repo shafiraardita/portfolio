@@ -10,49 +10,149 @@ export default function Home() {
 
 return (
 
-<main className="bg-black text-white">
+<main className="bg-[#050505] text-white">
+
+{/* background */}
 
 <div className="fixed inset-0 -z-10">
 
-<div className="absolute top-20 left-20 w-96 h-96 bg-blue-500/20 blur-3xl rounded-full"/>
+<div className="
+absolute
+top-0
+left-0
+w-[500px]
+h-[500px]
+bg-blue-500/10
+blur-[120px]
+rounded-full
+"/>
 
-<div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/20 blur-3xl rounded-full"/>
+<div className="
+absolute
+bottom-0
+right-0
+w-[500px]
+h-[500px]
+bg-purple-500/10
+blur-[120px]
+rounded-full
+"/>
 
 </div>
 
-<section className="min-h-screen flex items-center justify-center px-8">
 
-<div className="max-w-6xl grid md:grid-cols-2 gap-16 items-center">
+{/* navbar */}
+
+<nav className="
+sticky
+top-0
+z-50
+backdrop-blur-xl
+bg-black/30
+border-b
+border-white/10
+">
+
+<div className="
+max-w-7xl
+mx-auto
+flex
+justify-between
+items-center
+px-8
+py-5
+">
+
+<h1 className="font-bold">
+
+Shafira.dev
+
+</h1>
+
+<div className="flex gap-6">
+
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#project">Project</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</div>
+
+</nav>
+
+
+{/* hero */}
+
+<section
+className="
+min-h-screen
+flex
+items-center
+px-8
+"
+>
+
+<div className="
+max-w-7xl
+mx-auto
+grid
+md:grid-cols-2
+gap-16
+items-center
+">
 
 <div>
 
 <p className="text-blue-400 mb-4">
 
-Frontend Developer • Administration
+Frontend Developer • UI UX • Administration
 
 </p>
 
-<h1 className="text-6xl font-bold mb-6">
+<h1 className="
+text-7xl
+font-bold
+mb-8
+">
 
 Shafira Putri Ardita
 
 </h1>
 
-<p className="text-gray-400 leading-8 mb-8">
+<p className="
+text-gray-400
+leading-9
+mb-8
+">
 
-Saya adalah lulusan Teknik Informatika yang memiliki minat dan pengalaman di bidang frontend web development serta administrasi. Saya adalah developer yang fokus pada pengembangan website modern, UI/UX, dan teknologi frontend. Saya senang membangun aplikasi yang cepat, responsive, dan mudah digunakan.
-Selain memiliki ketertarikan di bidang teknologi, saya juga memiliki pengalaman dalam pekerjaan administrasi seperti pengelolaan data, input data, penyusunan dokumen, pengarsipan, serta membantu kebutuhan operasional dan administrasi lainnya. Saya terbiasa bekerja dengan teliti, rapi, dan terorganisir dalam mengelola data maupun dokumen.
-Di bidang teknologi, saya memiliki pengalaman membuat tampilan dashboard admin, monitoring data, manajemen pengguna, pagination, tracking laporan, dan visualisasi peta menggunakan Leaflet Maps menggunakan HTML, CSS, dan JavaScript. Saya juga pernah membantu pengerjaan project akademik, pengembangan website sederhana, serta kebutuhan administrasi berbasis digital.
-Saya adalah pribadi yang cepat belajar, disiplin, bertanggung jawab, mampu bekerja secara individu maupun tim, serta memiliki komunikasi yang baik dalam menyelesaikan pekerjaan dan beradaptasi dengan lingkungan kerja baru.
+Mahasiswa Teknik Informatika
+dengan pengalaman frontend,
+administrasi,
+pengelolaan data,
+dashboard monitoring,
+serta UI UX Design.
 
 </p>
 
-<div className="flex gap-4 flex-wrap">
+<div className="
+flex
+gap-4
+flex-wrap
+">
 
 <a
 href="/cv/cv.pdf"
-download
-className="bg-white text-black px-6 py-3 rounded-2xl flex gap-2"
+className="
+bg-white
+text-black
+px-6
+py-3
+rounded-2xl
+flex
+gap-2
+"
 >
 
 <FaDownload/>
@@ -63,7 +163,13 @@ CV
 
 <a
 href="https://github.com/shafiraardita"
-className="border px-6 py-3 rounded-2xl"
+target="_blank"
+className="
+border
+px-5
+py-3
+rounded-2xl
+"
 >
 
 <FaGithub/>
@@ -72,7 +178,13 @@ className="border px-6 py-3 rounded-2xl"
 
 <a
 href="https://www.linkedin.com/in/shafira-putri-ardita-s-t-b7396a29a/"
-className="border px-6 py-3 rounded-2xl"
+target="_blank"
+className="
+border
+px-5
+py-3
+rounded-2xl
+"
 >
 
 <FaLinkedin/>
@@ -81,7 +193,13 @@ className="border px-6 py-3 rounded-2xl"
 
 <a
 href="https://instagram.com/shafiraardita_"
-className="border px-6 py-3 rounded-2xl"
+target="_blank"
+className="
+border
+px-5
+py-3
+rounded-2xl
+"
 >
 
 <FaInstagram/>
@@ -92,21 +210,26 @@ className="border px-6 py-3 rounded-2xl"
 
 </div>
 
+
 <div className="flex justify-center">
+
+<div className="
+bg-white/5
+p-6
+rounded-[40px]
+backdrop-blur-xl
+border
+border-white/10
+">
 
 <Image
 src="/profile/profile.jpeg"
 alt="profile"
-width={380}
-height={380}
+width={320}
+height={320}
 className="
-rounded-full
-border
-border-white/20
+rounded-3xl
 object-cover
-w-[380px]
-h-[380px]
-shadow-2xl
 "
 />
 
@@ -114,66 +237,168 @@ shadow-2xl
 
 </div>
 
+</div>
+
 </section>
-<section className="py-32 px-8">
 
-<h2 className="text-5xl font-bold text-center mb-10">
 
-Curriculum Vitae
+{/* about */}
 
-</h2>
-
-<div className="max-w-4xl mx-auto bg-white/5 rounded-3xl p-10 text-center">
-
-<p className="text-gray-400 mb-8">
-
-Download CV lengkap saya
-
-</p>
-
-<a
-href="/cv/cv.pdf"
-download
+<section
+id="about"
 className="
-bg-white
-text-black
+max-w-7xl
+mx-auto
 px-8
-py-4
-rounded-2xl
-inline-block
+py-24
 "
 >
 
-Download CV
+<div className="
+grid
+md:grid-cols-3
+gap-6
+">
 
-</a>
+<div className="
+bg-white/5
+p-8
+rounded-3xl
+">
+
+<h3 className="mb-3">
+
+Frontend
+
+</h3>
+
+<p className="text-gray-400">
+
+HTML
+CSS
+JavaScript
+Dashboard
+
+</p>
+
+</div>
+
+<div className="
+bg-white/5
+p-8
+rounded-3xl
+">
+
+<h3 className="mb-3">
+
+Administration
+
+</h3>
+
+<p className="text-gray-400">
+
+Arsip
+Input Data
+Dokumen
+
+</p>
+
+</div>
+
+<div className="
+bg-white/5
+p-8
+rounded-3xl
+">
+
+<h3 className="mb-3">
+
+UI UX
+
+</h3>
+
+<p className="text-gray-400">
+
+Wireframe
+Prototype
+Research
+
+</p>
+
+</div>
 
 </div>
 
 </section>
-<section className="py-32 px-8">
 
-<h2 className="text-5xl text-center mb-10">
 
-Certificates
+{/* experience */}
+
+<section
+id="experience"
+className="
+max-w-7xl
+mx-auto
+px-8
+py-24
+"
+>
+
+<h2 className="
+text-5xl
+font-bold
+mb-12
+">
+
+Experience
 
 </h2>
 
-<div className="max-w-5xl mx-auto">
+<div className="space-y-8">
 
-<embed
-src="/certificates/bappeda.pdf"
-width="100%"
-height="700"
-/>
-<embed
-src="/certificates/kampusmerdeka.pdf"
-width="100%"
-height="700"
-/>
+<div className="
+bg-white/5
+p-8
+rounded-3xl
+">
+
+2022–2025
+
+Sekretaris Divisi Komunikasi dan Informasi
+
+HMTI
+
+</div>
+
+<div className="
+bg-white/5
+p-8
+rounded-3xl
+">
+
+2024
+
+MSIB UI UX Designer
+
+</div>
+
+<div className="
+bg-white/5
+p-8
+rounded-3xl
+">
+
+2022
+
+Staff Arsip Administrasi
+Bappedalitbang
+
+</div>
+
 </div>
 
 </section>
+
 </main>
 
 )
