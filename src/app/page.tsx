@@ -534,56 +534,7 @@ export default function Home() {
 
       {/* PROJECT */}
 
-      <section
-        id="project"
-        className="
-        max-w-7xl
-        mx-auto
-        px-8
-        py-24
-        "
-      >
-
-        <h2 className="
-        text-5xl
-        font-bold
-        mb-12
-        ">
-
-          Featured Project
-
-        </h2>
-
-        <div className="
-        bg-white/5
-        rounded-3xl
-        p-8
-        ">
-
-          <h3 className="
-          text-3xl
-          mb-4
-          ">
-
-            Sistem Monitoring dan Evaluasi
-            Kecelakaan Lalu Lintas Kota Bogor
-
-          </h3>
-
-          <p className="text-gray-400">
-
-            Dashboard monitoring,
-            tracking laporan,
-            pagination,
-            Leaflet Maps,
-            visualisasi data.
-
-          </p>
-
-        </div>
-
-      </section>
-
+      import ProjectGallery from "./components/ProjectGallery";
 
 
       {/* FOOTER */}
