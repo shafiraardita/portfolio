@@ -483,54 +483,95 @@ export default function Home() {
       {/* CERTIFICATE */}
 
       <section
-        id="certificate"
-        className="
-        max-w-7xl
-        mx-auto
-        px-8
-        py-24
-        "
+      id="certificate"
+      className="
+      max-w-7xl
+      mx-auto
+      px-8
+      py-24
+      "
       >
 
-        <h2 className="
-        text-5xl
-        font-bold
-        mb-12
-        ">
+      <h2 className="
+      text-5xl
+      font-bold
+      mb-12
+      ">
 
-          Certificates
+      Certificates
 
-        </h2>
+      </h2>
 
-        <div className="
-        grid
-        md:grid-cols-2
-        gap-8
-        ">
+      <div className="
+      grid
+      grid-cols-1
+      md:grid-cols-2
+      gap-8
+      ">
 
-          <div className="
-          bg-white/5
-          rounded-3xl
-          p-8
-          ">
+      {/* Sertifikat Bappeda */}
 
-            <embed
-              src="/certificates/bappeda.pdf"
-              width="100%"
-              height="400"
-            />
-            <embed
-              src="/certificates/kampusmerdeka.pdf"
-              width="100%"
-              height="400"
-            />
+      <div className="
+      bg-white/5
+      rounded-3xl
+      p-8
+      border
+      border-white/10
+      backdrop-blur-xl
+      ">
 
-          </div>
+      <h3 className="
+      text-xl
+      font-semibold
+      mb-6
+      ">
 
-        </div>
+      Staff Arsip Administrasi
+      Bappedalitbang
+
+      </h3>
+
+      <embed
+      src="/certificates/bappeda.pdf"
+      width="100%"
+      height="500"
+      />
+
+      </div>
+
+
+      {/* Sertifikat MSIB */}
+
+      <div className="
+      bg-white/5
+      rounded-3xl
+      p-8
+      border
+      border-white/10
+      backdrop-blur-xl
+      ">
+
+      <h3 className="
+      text-xl
+      font-semibold
+      mb-6
+      ">
+
+      MSIB UI UX Designer
+
+      </h3>
+
+      <embed
+      src="/certificates/kampusmerdeka.pdf"
+      width="100%"
+      height="500"
+      />
+
+      </div>
+
+      </div>
 
       </section>
-
 
 
       {/* PROJECT */}
